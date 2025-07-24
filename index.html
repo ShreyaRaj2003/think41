@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Catalog Filter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Product Catalog</h1>
+    <div class="filters">
+      <div class="filter-group">
+        <label for="category">Category</label>
+        <select id="category">
+          <option value="">All Categories</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Brand</label>
+        <div id="brandContainer"></div>
+      </div>
+      <div class="filter-group">
+        <label for="minPrice">Min Price</label>
+        <input type="number" id="minPrice" placeholder="0" />
+        <label for="maxPrice">Max Price</label>
+        <input type="number" id="maxPrice" placeholder="10000" />
+      </div>
+      <div class="filter-group">
+        <button id="resetBtn">Reset Filters</button>
+      </div>
+    </div>
+    <div class="product-list" id="product-list"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
